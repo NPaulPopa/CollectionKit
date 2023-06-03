@@ -1,5 +1,5 @@
 import XCTest
-@testable import CollectionViewPackage
+@testable import CollectionKit
 
 final class CollectionViewPackageTests: XCTestCase {
     
