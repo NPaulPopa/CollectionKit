@@ -44,7 +44,7 @@ open class GenericCellViewModel<ItemModel: Resource>: CellViewModel {
     
     //MARK: - Configure Cell
 
-    public func configureCellViewModel(_ cell: GenericCell, in component: GenericComponent, for indexPath: IndexPath, genericDelegate: CollectionDelegateProtocol?) {
+    open func configureCellViewModel(_ cell: GenericCell, in component: GenericComponent, for indexPath: IndexPath, genericDelegate: CollectionDelegateProtocol?) {
         
         if let cell = cell as? CollectionCell<ItemModel> {
             configureComponent(for: cell, in: component, at: indexPath, using: genericDelegate)
